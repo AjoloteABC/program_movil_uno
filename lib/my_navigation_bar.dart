@@ -4,6 +4,7 @@ import 'my_calculator.dart';
 import 'my_data_entry.dart';
 import 'my_coordinate.dart';
 import 'my_map.dart';
+import 'my_datebase.dart';
 
 class MyNavigationBar extends StatefulWidget {
   const MyNavigationBar({Key? key}) : super(key: key);
@@ -23,6 +24,7 @@ class _MyNavigationBarState extends State<MyNavigationBar> {
     MyDataEntry(),
     MyCoordinate(),
     MyMap(),
+    MyDataBase(),
   ];
 
   void _onItemTapped(int index) {
@@ -58,6 +60,10 @@ class _MyNavigationBarState extends State<MyNavigationBar> {
           BottomNavigationBarItem(
             icon: Icon(Icons.map),
             label: 'Mapa',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.circle_rounded),
+            label: 'Contador',
           ),
         ],
         currentIndex: _selectedIndex,
