@@ -1,70 +1,55 @@
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
-
-
-class MyDataBase extends StatefulWidget {
-  const MyDataBase({Key? key}) : super(key: key);
-
-
+class MyCounter extends StatefulWidget {
+  const MyCounter({Key? key}) : super(key: key);
 
   @override
-  State<MyDataBase> createState() => _MyDataBaseState();
+  State<MyCounter> createState() => _MyCounterState();
 }
 
-class _MyDataBaseState extends State<MyDataBase> {
+class _MyCounterState extends State<MyCounter> {
   int _counter = 0;
 
   @override
-  initState(){
+  initState() {
     super.initState();
+    _loadCounter();
+  }
+
+  FirebaseFirestore db = FirebaseFirestore.instance;
+
+  void _loadCounter() {
     db.collection("Contador").doc('Variable').get().then((docSnapshot) {
       if (docSnapshot.exists) {
-        // Accede al campo "Incremento" y conviértelo a entero
-        int incremento = int.parse(docSnapshot.data()!['Incremento'].toString());
+        int incremento = docSnapshot.data()!['Incremento'];
         setState(() {
           _counter = incremento;
         });
       }
     });
   }
-  FirebaseFirestore db = FirebaseFirestore.instance;
 
   void _incrementCounter() {
     setState(() {
       _counter++;
     });
-    
-    // Create a new user with a first and last name
-    final user = <String, dynamic>{
-      'Incremento': _counter
-    };
 
-
-// Add a new document with a generated ID
+    // Actualización del valor en Firebase
+    final user = <String, dynamic>{'Incremento': _counter};
     db.collection("Contador").doc('Variable').set(user);
-
-
-
-
-
   }
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: AppBar(
-
         title: const Text(
-        'Contador',
-    ),
+          'Contador',
+        ),
       ),
       body: Center(
-
         child: Column(
-
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
@@ -85,4 +70,3 @@ class _MyDataBaseState extends State<MyDataBase> {
     );
   }
 }
-
