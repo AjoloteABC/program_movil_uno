@@ -5,6 +5,7 @@ import 'my_data_entry.dart';
 import 'my_coordinate.dart';
 import 'my_map.dart';
 import 'my_counter.dart';
+import 'my_calendar.dart';
 
 class MyNavigationBar extends StatefulWidget {
   const MyNavigationBar({Key? key}) : super(key: key);
@@ -24,7 +25,9 @@ class _MyNavigationBarState extends State<MyNavigationBar> {
     MyDataEntry(),
     MyCoordinate(),
     MyMap(),
+    MyCalendar(),
     MyCounter(),
+
   ];
 
   void _onItemTapped(int index) {
@@ -60,6 +63,10 @@ class _MyNavigationBarState extends State<MyNavigationBar> {
           BottomNavigationBarItem(
             icon: Icon(Icons.map),
             label: 'Mapa',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.calendar_month),
+            label: 'Calendario',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.add_circle),

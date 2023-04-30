@@ -19,6 +19,9 @@ class _MyCounterState extends State<MyCounter> {
 
   FirebaseFirestore db = FirebaseFirestore.instance;
 
+
+
+
   void _loadCounter() {
     db.collection("Contador").doc('Variable').get().then((docSnapshot) {
       if (docSnapshot.exists) {

@@ -34,6 +34,10 @@ dependencies:
   # path_provider: ^2.0.14
   geolocator: ^9.0.2
   flutter_osm_plugin: ^0.53.4
+  syncfusion_flutter_calendar: ^21.1.41
+  intl: ^0.18.1
+  flutter_colorpicker: ^1.0.3
+
 
   flutter:
     sdk: flutter
