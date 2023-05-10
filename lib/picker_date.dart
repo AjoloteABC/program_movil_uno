@@ -27,16 +27,16 @@ class _PickerDate extends State<PickerDate> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Form(
+
         // Valida el formulario en conjunto
         // Siempre ejecuta el validator de cada TextFormField,
         // en este ejemplo, puede llegar a ser molesto visualmente:
         // autovalidateMode: AutovalidateMode.always,
         child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
+
+          mainAxisSize: MainAxisSize.max,
+          children: <Widget>[ 
             Container(
-              padding: const EdgeInsets.fromLTRB(60, 0, 60, 30),
-              width: 600,
               child: TextFormField(
                 decoration: const InputDecoration(
                   icon: Icon(Icons.event_note_outlined),
@@ -60,8 +60,7 @@ class _PickerDate extends State<PickerDate> {
               ),
             ),
             Container(
-              padding: const EdgeInsets.fromLTRB(60, 0, 60, 30),
-              width: 600,
+              //padding: const EdgeInsets.fromLTRB(60, 0, 60, 30),
               child: TextField(
                 controller: fechaInicio,
                 //editing controller of this TextField
@@ -96,8 +95,7 @@ class _PickerDate extends State<PickerDate> {
               ),
             ),
             Container(
-              padding: const EdgeInsets.fromLTRB(60, 0, 60, 30),
-              width: 600,
+              //padding: const EdgeInsets.fromLTRB(60, 0, 60, 30),
               child: TextField(
                 controller: fechaFin,
                 //editing controller of this TextField
@@ -169,10 +167,6 @@ class _PickerDate extends State<PickerDate> {
                 ),
                 child: Text("Escoge un color"),
               ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(bottom:-1,top:10), //apply padding to some sides only
-              child: Text("Todo el dia"),
             ),
             Container(
               child: Column(

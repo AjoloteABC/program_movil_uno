@@ -7,81 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1084049404633:android:ae760e7a439be99f0b44c8",
-        "android_client_info": {
-          "package_name": "com.example.finalisimo"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "1084049404633-icm4q6thirm7rno0q03ndtbu1ucckdni.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyAsLqUyd1g6d-FPNTXY9OJgTQs75qqvN58"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "1084049404633-icm4q6thirm7rno0q03ndtbu1ucckdni.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "1084049404633-1d9tdka9ka1ad8nbcuf4oku7r686bf70.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.programMovilUno"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
         "mobilesdk_app_id": "1:1084049404633:android:2bd7bbe5d8fd3cf00b44c8",
         "android_client_info": {
           "package_name": "com.example.program_movil_uno"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "1084049404633-icm4q6thirm7rno0q03ndtbu1ucckdni.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyAsLqUyd1g6d-FPNTXY9OJgTQs75qqvN58"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "1084049404633-icm4q6thirm7rno0q03ndtbu1ucckdni.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "1084049404633-1d9tdka9ka1ad8nbcuf4oku7r686bf70.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.programMovilUno"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:1084049404633:android:d292a4abae9948150b44c8",
-        "android_client_info": {
-          "package_name": "com.example.proyecto1"
         }
       },
       "oauth_client": [

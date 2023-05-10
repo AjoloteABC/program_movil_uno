@@ -6,6 +6,8 @@ import 'my_coordinate.dart';
 import 'my_map.dart';
 import 'my_counter.dart';
 import 'my_calendar.dart';
+import 'my_nfc.dart';
+import 'my_chart.dart';
 
 class MyNavigationBar extends StatefulWidget {
   const MyNavigationBar({Key? key}) : super(key: key);
@@ -27,6 +29,8 @@ class _MyNavigationBarState extends State<MyNavigationBar> {
     MyMap(),
     MyCalendar(),
     MyCounter(),
+    MyNFC(),
+    MyChart(),
 
   ];
 
@@ -71,6 +75,14 @@ class _MyNavigationBarState extends State<MyNavigationBar> {
           BottomNavigationBarItem(
             icon: Icon(Icons.add_circle),
             label: 'Contador',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.nfc),
+            label: 'NFC',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.bar_chart),
+            label: 'Chart',
           ),
         ],
         currentIndex: _selectedIndex,
